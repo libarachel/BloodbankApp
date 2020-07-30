@@ -1,0 +1,15 @@
+<div style="background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-geometric-gradient-creative-blood-donation-poster-background-material-image_134137.jpg');background-repeat: no-repeat;background-size: cover;">
+<h1>Login Form</h1><hr/>
+<form style="height:445px;"#userLogin="ngForm" >
+<div class="formcontainer" style="margin-left: 280px;">
+  
+<div class="container">
+  <label for="username"><strong>Email</strong></label>
+  <input type="email" name="username" [(ngModel)]="loginUserDetails.email" class="form-control rounded-0" #email="ngModel"  [class.is-invalid]="email.invalid && email.touched"  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+  <label for="password"><strong>Password</strong></label>
+  <input type="password"  name="password" [(ngModel)]="loginUserDetails.password" class="form-control rounded-0" #password="ngModel" [class.is-invalid]="password.invalid && password.touched" minlength="6" required>
+</div>
+<button type="button" [disabled]="userLogin.form.invalid"  (click)="loginUser()" >Login</button>
+
+</div></form>
+</div>

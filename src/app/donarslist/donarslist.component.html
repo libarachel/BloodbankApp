@@ -1,0 +1,40 @@
+<div class="card" style="height: 529px;background-color: darkkhaki;">
+    <div class="card-header">  </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                       
+                        <th>Name</th>
+                        
+                        <th>SEX</th>
+                        <th>MobileNo</th>
+                        <th>District</th>
+                        <th>Email</th>
+                        <th>Weight</th>
+                        <th>Height</th>
+                        <th>BloodGroup</th>
+                    </tr>
+                </thead>
+                <tbody>
+      <tr *ngFor='let donar of donars; let i= index'>
+          
+                    <td>{{ donar.donarName }}</td>
+                    
+                    <td>{{ donar.donarSex }}</td>
+                    <td>{{ donar.donarMobileno }}</td>
+                     <td>{{ donar.donarDistrict }}</td>
+                    <td>{{ donar.donarEmail }}</td>
+                    <td>{{ donar.donarWeight }}</td>
+                    <td>{{ donar.donarHeight }}</td>
+                    <td>{{ donar.donarBloodGroup }}</td>
+               
+                   <td> <input type="button" [routerLink]="['/edit', donar._id]" value="edit"/></td>
+                   <td> <input type="button" (click)="deleteDonars(donar,i)" value="delete"/></td>
+      </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

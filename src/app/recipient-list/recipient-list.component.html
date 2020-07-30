@@ -1,0 +1,36 @@
+<div class="card" style="height: 529px;background-color: darkkhaki;">
+    <div class="card-header">  </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                       
+                        <th>Name</th>
+                        
+                        <th>SEX</th>
+                        <th>MobileNo</th>
+                        <th>District</th>
+                        <th>Email</th>
+                         <th>BloodGroup</th>
+                    </tr>
+                </thead>
+                <tbody>
+      <tr *ngFor='let recipient of recipients; let i= index'>
+          
+                    <td>{{ recipient.recipientName }}</td>
+                    
+                    <td>{{ recipient.recipientSex }}</td>
+                    <td>{{ recipient.recipientMobileno }}</td>
+                     <td>{{ recipient.recipientDistrict }}</td>
+                    <td>{{ recipient.recipientEmail }}</td>
+                    <td>{{ recipient.recipientBloodGroup }}</td>
+               
+                   <td> <input type="button" [routerLink]="['/editing', recipient._id]" value="edit"/></td>
+                   <td> <input type="button" (click)="deleteRecipients(recipient,i)" value="delete"/></td>
+      </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+
+<div class="card" style="background-color: darkkhaki;">
+    <form (ngSubmit)="AddDonar()">
+        <div class="card-header">
+            
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                       
+                        <tr>
+                            <td><label>Donar Name</label></td>
+                            <td> <input type="text" name="p_name" [(ngModel)]="donarItem.donarName" required/></td>
+
+                        </tr>
+                       
+                        <tr>
+                            <td><label>Donar SEX</label></td>
+                            <td> <input type="text" name="p_code" [(ngModel)]="donarItem.donarSex" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar MobileNo</label></td>
+                            <td> <input type="text" name="p_date" [(ngModel)]="donarItem.donarMobileno" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar District</label></td>
+                            <td> <input type="text" name="p_desc" [(ngModel)]="donarItem.donarDistrict" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Email</label></td>
+                            <td> <input type="text" name="p_price" [(ngModel)]="donarItem.donarEmail" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Weight(kg)</label></td>
+                            <td> <input type="text" name="p_rating" [(ngModel)]="donarItem.donarWeight" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Height(cm)</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="donarItem.donarHeight" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar BloodGroup</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="donarItem.donarBloodGroup" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar BloodDonationHistory</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="donarItem.donarBloodDonationHistory" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar DiseaseBackground</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="donarItem.donarDiseaseBackground" required/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar LastDonateDate</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="donarItem.donarLastDonateDate" required/></td>
+
+                        </tr>
+                      
+                        <tr>
+                            <td></td>
+                            <td> <input type="submit" value="Submit"/></td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

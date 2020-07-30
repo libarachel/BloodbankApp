@@ -1,0 +1,53 @@
+<div class="card"  style="height: 530px;background-color: darkkhaki;">
+    <form (ngSubmit)="editRecipients()">
+        <div class="card-header">
+            
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                       
+                        <tr>
+                            <td><label>Recipient Name</label></td>
+                            <td> <input type="text" name="p_name" [(ngModel)]="updateRecipient.recipientName"/></td>
+
+                        </tr>
+                       
+                        <tr>
+                            <td><label>Recipient SEX</label></td>
+                            <td> <input type="text" name="p_code" [(ngModel)]="updateRecipient.recipientSex"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient MobileNo</label></td>
+                            <td> <input type="text" name="p_date" [(ngModel)]="updateRecipient.recipientMobileno"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient District</label></td>
+                            <td> <input type="text" name="p_desc" [(ngModel)]="updateRecipient.recipientDistrict"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient Email</label></td>
+                            <td> <input type="text" name="p_price" [(ngModel)]="updateRecipient.recipientEmail"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient Blood Group</label></td>
+                            <td> <input type="text" name="p_rating" [(ngModel)]="updateRecipient.recipientBloodGroup"/></td>
+
+                        </tr>
+                            <tr>
+                            <td></td>
+                            <td> <input type="submit"value="Submit"/></td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

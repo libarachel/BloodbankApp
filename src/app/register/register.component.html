@@ -1,0 +1,15 @@
+<div style="background-image: url('https://www.awarenessdays.com/wp-content/uploads/2018/07/iStock-693244582.jpg');background-repeat: no-repeat;background-size: cover;">
+<h1>Register Form</h1><hr/>
+<form style="height:445px"  class="form" #userLogin="ngForm">
+<div class="formcontainer" style="margin-left: 280px;">
+  
+
+  <label for="username"><strong>Email</strong></label>
+  <input type="email" name="email" class="form-control rounded-0" [(ngModel)]="registeredUser.email"  #email="ngModel"  [class.is-invalid]="email.invalid && email.touched" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+  <label for="password"><strong>Password</strong></label>
+  <input type="password"  name="password" class="form-control rounded-0" [(ngModel)]="registeredUser.password"  #password="ngModel"  [class.is-invalid]="password.invalid && password.touched" minlength="6" required>
+
+<button type="button" [disabled]="userLogin.form.invalid" (click)="registerUser()">Register</button>
+
+</div></form></div>

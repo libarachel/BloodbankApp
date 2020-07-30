@@ -1,0 +1,80 @@
+
+
+<div class="card" style="background-color: darkkhaki;">
+    <form (ngSubmit)="editDonars()">
+        <div class="card-header">
+            
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                       
+                        <tr>
+                            <td><label>Donar Name</label></td>
+                            <td> <input type="text" name="p_name" [(ngModel)]="updateDonar.donarName"/></td>
+
+                        </tr>
+                       
+                        <tr>
+                            <td><label>Donar SEX</label></td>
+                            <td> <input type="text" name="p_code" [(ngModel)]="updateDonar.donarSex"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar MobileNo</label></td>
+                            <td> <input type="text" name="p_date" [(ngModel)]="updateDonar.donarMobileno"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar District</label></td>
+                            <td> <input type="text" name="p_desc" [(ngModel)]="updateDonar.donarDistrict"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Email</label></td>
+                            <td> <input type="text" name="p_price" [(ngModel)]="updateDonar.donarEmail"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Weight</label></td>
+                            <td> <input type="text" name="p_rating" [(ngModel)]="updateDonar.donarWeight"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar Height</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="updateDonar.donarHeight"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar BloodGroup</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="updateDonar.donarBloodGroup"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar BloodDonationHistory</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="updateDonar.donarBloodDonationHistory"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar DiseaseBackground</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="updateDonar.donarDiseaseBackground"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Donar LastDonateDate</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="updateDonar.donarLastDonateDate"/></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <input type="submit" value="Submit"/></td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

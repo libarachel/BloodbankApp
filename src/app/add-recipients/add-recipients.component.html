@@ -1,0 +1,58 @@
+
+
+<div class="card" style="height: 530px;background-color: darkkhaki;">
+    <form (ngSubmit)="AddRecipient()">
+        <div class="card-header">
+            
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                       
+                        <tr>
+                            <td><label>Recipient Name</label></td>
+                            <td> <input type="text"  [(ngModel)]="recipientItem.recipientName"   /></td>
+
+                        </tr>
+                    
+                        <tr>
+                            <td><label>Recipient SEX</label></td>
+                            <td> <input type="text" name="p_code" [(ngModel)]="recipientItem.recipientSex"  ng-required="true"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient MobileNo</label></td>
+                            <td> <input type="text" name="p_date" [(ngModel)]="recipientItem.recipientMobileno"  ng-required="true"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient District</label></td>
+                            <td> <input type="text" name="p_desc" [(ngModel)]="recipientItem.recipientDistrict" ng-required="true"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Recipient Email</label></td>
+                            <td> <input type="text" name="p_price" [(ngModel)]="recipientItem.recipientEmail" ng-required="true"/></td>
+
+                        </tr>
+                        
+                       
+                        <tr>
+                            <td><label>Recipient BloodGroup</label></td>
+                            <td> <input type="text" name="p_image" [(ngModel)]="recipientItem.recipientBloodGroup" ng-required="true"/></td>
+
+                        </tr>
+                      
+                        <tr>
+                            <td></td>
+                            <td> <input type="submit"  value="Submit"/></td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
