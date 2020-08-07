@@ -3,15 +3,16 @@ const mongoose=require('mongoose');
 const router = express.Router();
 //mongodb+srv://user_liba:<password>@mycluster01.2whql.azure.mongodb.net/<dbname>?retryWrites=true&w=majority
 // mongoose.connect('mongodb://localhost:27017/productDb');
-const db='mongodb+srv://user_liba:bibinpwd@mycluster01.2whql.azure.mongodb.net/bloodbankdb?retryWrites=true&w=majority';
+mongoose.connect('mongodb://localhost:27017/bloodbankdb');
+// const db='mongodb+srv://user_liba:bibinpwd@mycluster01.2whql.azure.mongodb.net/bloodbankdb?retryWrites=true&w=majority';
 
-mongoose.connect(db,function(err){
-    if(err){
-        console.error('Error!' + err)
-    }else{
-        console.log('Connected to mongodb')
-    }
-});
+// mongoose.connect(db,function(err){
+//     if(err){
+//         console.error('Error!' + err)
+//     }else{
+//         console.log('Connected to mongodb')
+//     }
+// });
 const donarData = require('../model/donardata');
 const recipientData = require('../model/recipientdata');
 
