@@ -12,13 +12,13 @@
                        
                         <tr>
                             <td><label>Recipient Name</label></td>
-                            <td> <input type="text"  [(ngModel)]="recipientItem.recipientName"   /></td>
+                            <td> <input type="text" name="p_name" [(ngModel)]="recipientItem.recipientName" ng-required="true"/></td>
 
                         </tr>
                     
                         <tr>
                             <td><label>Recipient SEX</label></td>
-                            <td> <input type="text" name="p_code" [(ngModel)]="recipientItem.recipientSex"  ng-required="true"/></td>
+                            <td> <input type="text" name="p_sex"  [(ngModel)]="recipientItem.recipientSex"  ng-required="true"/></td>
 
                         </tr>
                         <tr>
